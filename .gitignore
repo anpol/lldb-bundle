@@ -1,0 +1,6 @@
+*.egg-info/
+.idea/
+README.html
+build/
+lib/
+venv/
