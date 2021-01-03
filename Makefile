@@ -22,7 +22,7 @@ SUBMODULES = \
 all: format lint test
 
 init:
-	find $(SUBMODULES) -maxdepth 1 -name Makefile -execdir $(MAKE) init \;
+	$(foreach subdir,$(SUBMODULES),$(MAKE) -C $(subdir) $@ && ) true
 	$(MAKE) build-fbchisel
 
 # fbchisel has `findinstances` command that requires a native framework,
@@ -34,15 +34,15 @@ build-fbchisel:
 
 
 format:
-	find $(SUBMODULES) -maxdepth 1 -name Makefile -execdir $(MAKE) format \;
+	@$(foreach subdir,$(SUBMODULES),$(MAKE) -C $(subdir) $@ && ) true
 	! hash yapf || yapf -i .*.py
 
 lint:
-	find $(SUBMODULES) -maxdepth 1 -name Makefile -execdir $(MAKE) lint \;
+	@$(foreach subdir,$(SUBMODULES),$(MAKE) -C $(subdir) $@ && ) true
 	! hash shellcheck || shellcheck .envrc
 
 test:
-	find $(SUBMODULES) -maxdepth 1 -name Makefile -execdir $(MAKE) test \;
+	@$(foreach subdir,$(SUBMODULES),$(MAKE) -C $(subdir) $@ && ) true
 
 dists:
-	find $(SUBMODULES) -maxdepth 1 -name Makefile -execdir $(MAKE) dists \;
+	@$(foreach subdir,$(SUBMODULES),$(MAKE) -C $(subdir) $@ && ) true
