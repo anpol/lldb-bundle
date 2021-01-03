@@ -10,3 +10,6 @@
 [submodule "lldb-script-utils"]
 	path = lldb-script-utils
 	url = ../../anpol/lldb-script-utils.git
+[submodule "lldb-swift-string-index"]
+	path = lldb-swift-string-index
+	url = ../../anpol/lldb-swift-string-index.git

@@ -14,6 +14,7 @@
 SUBMODULES = \
 	lldb-script-utils \
 	lldb-fmtlog \
+	lldb-swift-string-index \
 
 .PHONY: all format lint test \
 	init build-fbchisel \
@@ -31,7 +32,6 @@ init:
 build-fbchisel:
 	$(MAKE) -C fbchisel/Chisel install PREFIX="$(CURDIR)/lib" \
 		LD_DYLIB_INSTALL_NAME="$(CURDIR)/lib/Chisel.framework/Chisel"
-
 
 format:
 	@$(foreach subdir,$(SUBMODULES),$(MAKE) -C $(subdir) $@ && ) true

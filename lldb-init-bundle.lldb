@@ -3,3 +3,4 @@ command script import ~/.lldb/bundle/fbchisel/fbchisellldb.py
 
 command script import ~/.lldb/bundle/lldb-script-utils/lldb_script_utils
 command script import ~/.lldb/bundle/lldb-fmtlog/lldb_fmtlog
+command script import ~/.lldb/bundle/lldb-swift-string-index/lldb_swift_string_index
