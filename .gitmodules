@@ -4,9 +4,9 @@
 [submodule "fbchisel"]
 	path = fbchisel
 	url = ../../facebook/chisel.git
-[submodule "lldb-command-script-utils"]
-	path = lldb-command-script-utils
-	url = ../../anpol/lldb-command-script-utils.git
 [submodule "lldb-fmtlog"]
 	path = lldb-fmtlog
 	url = ../../anpol/lldb-fmtlog.git
+[submodule "lldb-script-utils"]
+	path = lldb-script-utils
+	url = ../../anpol/lldb-script-utils.git

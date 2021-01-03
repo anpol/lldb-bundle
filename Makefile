@@ -12,7 +12,7 @@
 # - `make dists`: create distribution packages.
 
 SUBMODULES = \
-	lldb-command-script-utils \
+	lldb-script-utils \
 	lldb-fmtlog \
 
 .PHONY: all format lint test \

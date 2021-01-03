@@ -1,5 +1,5 @@
 command script import ~/.lldb/bundle/dslldb/lldb_commands/dslldb.py
 command script import ~/.lldb/bundle/fbchisel/fbchisellldb.py
 
-command script import ~/.lldb/bundle/lldb-command-script-utils/lldb_command_script_utils
+command script import ~/.lldb/bundle/lldb-script-utils/lldb_script_utils
 command script import ~/.lldb/bundle/lldb-fmtlog/lldb_fmtlog
