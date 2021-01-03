@@ -1,12 +1,12 @@
 [submodule "dslldb"]
 	path = dslldb
-	url = https://github.com/DerekSelander/LLDB.git
+	url = ../../DerekSelander/LLDB.git
 [submodule "fbchisel"]
 	path = fbchisel
-	url = https://github.com/facebook/chisel.git
+	url = ../../facebook/chisel.git
 [submodule "lldb-command-script-utils"]
 	path = lldb-command-script-utils
-	url = https://github.com/anpol/lldb-command-script-utils.git
+	url = ../../anpol/lldb-command-script-utils.git
 [submodule "lldb-fmtlog"]
 	path = lldb-fmtlog
-	url = https://github.com/anpol/lldb-fmtlog.git
+	url = ../../anpol/lldb-fmtlog.git
